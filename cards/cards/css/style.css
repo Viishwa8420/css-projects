@@ -1,0 +1,75 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	display:inline-block;
+}
+.container{
+	max-width:1140px;
+	margin:0 auto;
+}
+.card{
+	width:400px;
+	background-color:black;
+	color:white;
+	border-radius:30px;
+	overflow:hidden;
+}
+.card-img{
+	width:100%;
+	height:300px;
+	overflow:hidden;
+}
+.card-img img{
+	width:100%;
+	height:100%;
+	object-fit:cover;
+	transition:1s;
+}
+.card-content{
+	padding:20px;
+}
+.card-content h1{
+	font-size:40px;
+}
+.card-content p{
+	font-size:20px;
+	margin:10px 0;
+}
+.card-content button{
+	width:120px;
+	height:40px;
+	background-color:white;
+	color:black;
+	border:0;
+	transition:1s;
+}
+button:hover{
+	background-color:purple;
+	color:white;
+}
+.card:first-child .card-img:hover img
+{
+	transform:scale(0.8);
+}
+.card:last-child .card-img:hover img
+{
+	transform:translate(50%);
+}
+
+.card:nth-child(2) .card-img:hover img
+{
+	transform:rotate(360deg);
+}
+.card:nth-child(3) .card-img:hover img
+{
+	transform:rotatex(360deg);
+}
+.card:nth-child(4) .card-img:hover img
+{
+	transform:scale(1.5);
+}
+.card:nth-last-child(2) .card-img:hover img
+{
+	transform:skew(30deg);
+}
